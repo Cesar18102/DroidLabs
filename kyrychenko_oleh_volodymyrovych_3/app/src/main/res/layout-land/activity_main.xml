@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:enabled="false"/>
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/result"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/digit_1"
+            android:text="@string/digit_1"
+            android:onClick="onDigitClick"
+            style="@style/DigitButtonLand"/>
+
+        <Button
+            android:id="@+id/digit_2"
+            android:text="@string/digit_2"
+            android:layout_toEndOf="@id/digit_1"
+            android:onClick="onDigitClick"
+            style="@style/DigitButtonLand"/>
+
+        <Button
+            android:id="@+id/digit_3"
+            android:text="@string/digit_3"
+            android:layout_toEndOf="@id/digit_2"
+            android:onClick="onDigitClick"
+            style="@style/DigitButtonLand"/>
+
+        <Button
+            android:id="@+id/digit_4"
+            android:text="@string/digit_4"
+            android:layout_below="@id/digit_1"
+            android:onClick="onDigitClick"
+            style="@style/DigitButtonLand"/>
+
+        <Button
+            android:id="@+id/digit_5"
+            android:text="@string/digit_5"
+            android:layout_below="@id/digit_2"
+            android:layout_toEndOf="@id/digit_4"
+            android:onClick="onDigitClick"
+            style="@style/DigitButtonLand"/>
+
+        <Button
+            android:id="@+id/digit_6"
+            android:text="@string/digit_6"
+            android:layout_below="@id/digit_3"
+            android:layout_toEndOf="@id/digit_5"
+            android:onClick="onDigitClick"
+            style="@style/DigitButtonLand"/>
+
+        <Button
+            android:id="@+id/comma"
+            android:text="@string/comma"
+            android:layout_below="@id/digit_3"
+            android:layout_toEndOf="@id/digit_6"
+            android:onClick="onCommaClick"
+            style="@style/DigitButtonLand"/>
+
+        <Button
+            android:id="@+id/digit_7"
+            android:text="@string/digit_7"
+            android:layout_below="@id/digit_4"
+            android:onClick="onDigitClick"
+            style="@style/DigitButtonLand"/>
+
+        <Button
+            android:id="@+id/digit_8"
+            android:text="@string/digit_8"
+            android:layout_below="@id/digit_4"
+            android:layout_toEndOf="@id/digit_7"
+            android:onClick="onDigitClick"
+            style="@style/DigitButtonLand"/>
+
+        <Button
+            android:id="@+id/digit_9"
+            android:text="@string/digit_9"
+            android:layout_below="@id/digit_6"
+            android:layout_toEndOf="@id/digit_8"
+            android:onClick="onDigitClick"
+            style="@style/DigitButtonLand"/>
+
+        <Button
+            android:id="@+id/digit_0"
+            android:text="@string/digit_0"
+            android:layout_below="@id/comma"
+            android:layout_toEndOf="@id/digit_9"
+            android:onClick="onDigitClick"
+            style="@style/DigitButtonLand"/>
+
+        <Button
+            android:id="@+id/equals"
+            android:text="@string/equals"
+            android:layout_toStartOf="@id/clear"
+            android:onClick="onEqualsClick"
+            style="@style/OperationButtonLand"/>
+
+        <Button
+            android:id="@+id/clear"
+            android:text="@string/clear_button"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClearClick"
+            style="@style/OperationButtonLand"/>
+
+        <Button
+            android:id="@+id/minus"
+            android:text="@string/minus"
+            android:layout_below="@id/clear"
+            android:layout_alignParentEnd="true"
+            android:onClick="onMinusClick"
+            style="@style/OperationButtonLand"/>
+
+        <Button
+            android:id="@+id/plus"
+            android:text="@string/plus"
+            android:layout_below="@id/equals"
+            android:layout_toStartOf="@id/minus"
+            android:onClick="onPlusClick"
+            style="@style/OperationButtonLand"/>
+
+        <Button
+            android:id="@+id/mult"
+            android:text="@string/mult"
+            android:layout_below="@id/plus"
+            android:layout_toStartOf="@id/div"
+            android:onClick="onMultClick"
+            style="@style/OperationButtonLand"/>
+
+        <Button
+            android:id="@+id/div"
+            android:text="@string/div"
+            android:layout_below="@id/minus"
+            android:layout_alignParentEnd="true"
+            android:onClick="onDivClick"
+            style="@style/OperationButtonLand"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
