@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">kyrychenko_oleh_volodymyrovych_4</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="edit_menu_option">Edit</string>
+    <string name="delete_menu_option">Delete</string>
+    <string name="title_label">"Note title"</string>
+    <string name="description_label">"Note description"</string>
+    <string name="importance_label">Importance:</string>
+    <string name="importance_high">HIGH</string>
+    <string name="importance_low">LOW</string>
+    <string name="importance_medium">MEDIUM</string>
+    <string name="pick_img_gallery_button_text">Select an image from gallery</string>
+    <string name="pick_img_web_editor_placeholder">Set a web-URL for an image</string>
+    <string name="add_note">Add Note</string>
+    <string name="save_note">Save Note</string>
+    <string name="filter_by_name">By name</string>
+    <string name="filter_by_importance">By importance</string>
+    <string name="filter">Filter</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="filter_by_content_label">Title or description fragment</string>
+    <string name="confirm_filters">Apply Filters</string>
+    <string name="search_by_title">Search title</string>
+    <string name="search_by_description">Search description</string>
+    <string name="search_done_button_text">Done</string>
+</resources>

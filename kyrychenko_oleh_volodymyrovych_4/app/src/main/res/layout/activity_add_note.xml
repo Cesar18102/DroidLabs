@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title_label"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description_label"
+            android:inputType="text" />
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <TextView
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:text="@string/importance_label" />
+
+            <RadioGroup
+                android:layout_column="1"
+                android:layout_columnWeight="3"
+                android:id="@+id/importance_group"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/importance_low"
+                    android:text="@string/importance_low" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/importance_medium"
+                    android:text="@string/importance_medium" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/importance_high"
+                    android:text="@string/importance_high" />
+
+            </RadioGroup>
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/img_picker_caller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSelectImageFromGalleryButtonClicked"
+            android:text="@string/pick_img_gallery_button_text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_url_editor"
+            android:inputType="textUri"
+            android:hint="@string/pick_img_web_editor_placeholder" />
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <nure.kyrychenko_oleh_volodymyrovych_4.Controls.NoteView
+            android:id="@+id/note_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/add_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onAddNoteButtonClicked"
+            android:text="@string/add_note" />
+
+    </LinearLayout>
+</ScrollView>

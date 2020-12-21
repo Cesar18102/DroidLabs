@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragments.NoteSearchFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55555555">
+    <FrameLayout
+        android:background="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/title_search_entry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/search_by_title" />
+
+            <EditText
+                android:id="@+id/description_search_entry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/search_by_description" />
+
+            <Button
+                android:id="@+id/search_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search_done_button_text"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

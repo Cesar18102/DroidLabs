@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="NoteView">
+        <attr name="exampleTitle" format="string" />
+        <attr name="exampleDescription" format="string" />
+    </declare-styleable>
+</resources>
